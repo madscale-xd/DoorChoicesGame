@@ -62,4 +62,14 @@ public class WeepingAngels3 : MonoBehaviour
             activationZoneCount = Mathf.Max(0, --activationZoneCount); // Prevent negative values
         }
     }
+
+     private void OnCollisionEnter(Collision collision)
+    {
+        // Check if the collision is with the player's Transform
+        if (collision.transform == player)
+        {
+            Debug.Log("Weeping Angel destroyed!");
+            Destroy(gameObject); // Destroy this Weeping Angel object
+        }
+    }
 }

@@ -70,4 +70,14 @@ public class WeepingAngels2 : MonoBehaviour
             }
         }
     }
+
+     private void OnCollisionEnter(Collision collision)
+    {
+        // Check if the collision is with the player's Transform
+        if (collision.transform == player)
+        {
+            Debug.Log("Weeping Angel destroyed!");
+            Destroy(gameObject); // Destroy this Weeping Angel object
+        }
+    }
 }

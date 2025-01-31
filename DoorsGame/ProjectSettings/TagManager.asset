@@ -9,6 +9,8 @@ TagManager:
   - Fish
   - Cross
   - Wine
+  - Enemy
+  - Playerr
   layers:
   - Default
   - TransparentFX

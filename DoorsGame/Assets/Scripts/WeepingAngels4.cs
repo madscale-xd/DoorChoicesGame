@@ -42,4 +42,14 @@ public class WeepingAngels4 : MonoBehaviour
         isSeeking = false;
         agent.ResetPath(); // Stops the AI from moving
     }
+
+     private void OnCollisionEnter(Collision collision)
+    {
+        // Check if the collision is with the player's Transform
+        if (collision.transform == player)
+        {
+            Debug.Log("Weeping Angel destroyed!");
+            Destroy(gameObject); // Destroy this Weeping Angel object
+        }
+    }
 }

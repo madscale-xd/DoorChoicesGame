@@ -1,13 +1,23 @@
 using UnityEngine;
+using TMPro;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f; // Speed of the player movement
     [SerializeField] private float rotationSpeed = 10f; // Speed of player rotation
     [SerializeField] private Camera mainCamera; // Assign the main camera in the Inspector
+    [SerializeField] private TextMeshProUGUI hpText; // Assign the TextMeshPro component in the Inspector
+
+    private int playerHp = 3;
 
     private Rigidbody rb;
     private Vector3 moveDirection;
+
+    private string[] romanNumerals = { "0", "I", "II" }; // Roman numeral representation of HP
+
+
+    [SerializeField] private SceneButtonManager scene;
 
     void Start()
     {
@@ -67,6 +77,22 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.CompareTag("Enemy")){
+            playerHp--;
+            UpdateHpText();
+            if (playerHp == 0)
+            {
+                scene.PlayerDies();
+                gameObject.SetActive(false);
+            }
+        }
+    }
+
+    private void UpdateHpText()
+    {
+        if (hpText != null)
+        {
+            hpText.text = romanNumerals[Mathf.Max(playerHp, 0)]; // Prevents index errors
+        }
     }
 }
