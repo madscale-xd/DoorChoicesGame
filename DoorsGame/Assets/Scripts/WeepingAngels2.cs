@@ -7,6 +7,7 @@ public class WeepingAngels2 : MonoBehaviour
     [SerializeField] private string triggerTag = "ActivationZone"; // Tag of the trigger object
     [SerializeField] private float moveSpeed = 3f; // Speed of movement
 
+
     private NavMeshAgent agent;
     private bool isChasing = false;
     private int activationZoneCount = 0; // Track how many overlapping triggers the enemy is inside
@@ -29,11 +30,12 @@ public class WeepingAngels2 : MonoBehaviour
         if (isChasing && player != null)
         {
             agent.SetDestination(player.position);
+            Debug.Log($"Agent destination set to {player.position}, Current Velocity: {agent.velocity}");
         }
         else
         {
             agent.ResetPath(); // Stop moving when not chasing
-        }
+        } 
     }
 
     private void OnTriggerEnter(Collider other)

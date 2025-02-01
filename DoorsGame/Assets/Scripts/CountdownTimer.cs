@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro; // For using TextMeshPro
 
 public class CountdownTimer : MonoBehaviour
@@ -9,69 +9,130 @@ public class CountdownTimer : MonoBehaviour
     private float timeRemaining;
     private bool timerActive = false;
 
-    [SerializeField] SceneButtonManager scene;
+    [SerializeField] private SceneButtonManager scene;
+
+    // 🎵 Background Music
+    [SerializeField] private AudioSource audioSource;  // Assign an AudioSource in the Inspector
+    [SerializeField] private AudioClip backgroundMusic; // Assign a music clip
+    [SerializeField, Range(0f, 1f)] private float musicVolume = 1f; // Adjustable volume (0 - 1)
 
     void Start()
     {
-        timeRemaining = startTime; // Set time remaining to start time
+        timeRemaining = startTime;
+        audioSource.playOnAwake = false;  // Ensure it doesn’t auto-play
+        audioSource.loop = true;  // Enable looping
+        audioSource.volume = musicVolume; // Set volume before playing
         StartTimer();
         UpdateTimerDisplay();
     }
 
     void Update()
     {
-        // Start countdown when timer is active
         if (timerActive)
         {
-            timeRemaining -= Time.deltaTime; // Decrease time by the time elapsed in the frame
+            timeRemaining -= Time.deltaTime;
 
             if (timeRemaining <= 0f)
             {
-                timeRemaining = 0f; // Prevent going below 0
-                timerActive = false; // Stop the timer when it hits 0
+                timeRemaining = 0f;
+                timerActive = false;
                 TimerEnded();
             }
 
-            UpdateTimerDisplay(); // Update the display each frame
+            UpdateTimerDisplay();
         }
     }
 
     void UpdateTimerDisplay()
     {
-        // Convert timeRemaining into minutes and seconds
         int minutes = Mathf.FloorToInt(timeRemaining / 60);
         int seconds = Mathf.FloorToInt(timeRemaining % 60);
-
-        // Display the time in Minute:Seconds format
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    // Method to start the timer (can be called from another script or button)
+    // 🎵 Start the timer and play music
     public void StartTimer()
     {
-        timerActive = true;
+        Debug.Log("🔄 StartTimer() called!");
+
+        if (!timerActive)
+        {
+            timerActive = true;
+            Debug.Log("✅ Timer started. Calling PlayMusic().");
+            PlayMusic(); // Play music when the timer starts
+        }
     }
 
-    // Method to stop the timer
+
+    // ⏹ Stop the timer and stop music
     public void StopTimer()
     {
         timerActive = false;
     }
 
-    // Method to reset the timer back to 3:00 (180 seconds)
+    // 🔄 Reset the timer and restart music
     public void ResetTimer()
     {
-        timeRemaining = startTime; // Reset the timer to the original start time
-        UpdateTimerDisplay(); // Update the display to reflect the reset
-        timerActive = false; // Optionally, stop the timer when reset
+        timeRemaining = startTime;
+        UpdateTimerDisplay();
+        timerActive = false;
         StartTimer();
     }
 
-    // Method to handle what happens when the timer ends (optional)
+    // ❌ When the timer ends, stop the music
     void TimerEnded()
     {
         Debug.Log("Timer has ended!");
-        // Handle any logic when the timer reaches 0 (e.g., triggering a game over, etc.)
         scene.PlayerDies();
+    }
+
+    // 🎵 Play background music (with debugging)
+    private void PlayMusic()
+    {
+        Debug.Log("🔊 PlayMusic() called!");
+
+        if (audioSource == null)
+        {
+            Debug.LogError("❌ AudioSource is missing! Assign it in the Inspector.");
+            return;
+        }
+
+        if (backgroundMusic == null)
+        {
+            Debug.LogError("❌ Background music AudioClip is missing! Assign it in the Inspector.");
+            return;
+        }
+
+        // 🔥 Force-stop & restart the audio to prevent "stuck" playback
+        audioSource.Stop();
+        audioSource.clip = backgroundMusic;
+        audioSource.volume = musicVolume;
+        audioSource.loop = true;
+        audioSource.Play();
+
+        Debug.Log("🎵 Now playing: " + backgroundMusic.name + " at volume: " + audioSource.volume);
+    }
+
+
+
+    // ⏹ Stop background music
+    private void StopMusic()
+    {
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+            Debug.Log("⏹ Stopped background music.");
+        }
+    }
+
+    // 🔊 Adjust volume dynamically
+    public void SetMusicVolume(float volume)
+    {
+        musicVolume = Mathf.Clamp(volume, 0f, 1f);
+        if (audioSource != null)
+        {
+            audioSource.volume = musicVolume;
+            Debug.Log("🔊 Music volume set to: " + musicVolume);
+        }
     }
 }
