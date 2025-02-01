@@ -37,7 +37,7 @@ public class SceneButtonManager : MonoBehaviour
     public void LoadGame()
     {
         PlaySFX(loadGameSFX); // Play SFX when loading game
-        SceneManager.LoadScene("DoorGame");
+        StartCoroutine(LoadGameWithDelay(1f)); // Start coroutine with a 1.5-second delay
     }
 
     public void LoadLose()
@@ -57,7 +57,7 @@ public class SceneButtonManager : MonoBehaviour
 
     public void PlayerDies()
     {
-        StartCoroutine(LoseAfterDelay(1.5f)); // Starts a coroutine with a 2-second delay
+        StartCoroutine(LoseAfterDelay(1.5f)); // Starts a coroutine with a delay
     }
 
     IEnumerator LoseAfterDelay(float delay)
@@ -93,5 +93,11 @@ public class SceneButtonManager : MonoBehaviour
         {
             Debug.LogWarning("SFX Source or SFX Clip is missing!");
         }
+    }
+
+    IEnumerator LoadGameWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay); // Wait for 'delay' seconds
+        SceneManager.LoadScene("DoorGame");
     }
 }

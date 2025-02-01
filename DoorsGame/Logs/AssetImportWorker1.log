@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.9f1 (ea401c316338) revision 15351836'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'en' Physical Memory: 16235 MB
+OS: 'Windows 11  (10.0.22631) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 16087 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity 2022.3.9f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/TheBa/OneDrive/Documents/GitHub/DoorChoicesGame/DoorsGame
+C:/Github projects/DoorChoicesGame/DoorsGame
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62162
-Successfully changed project path to: C:/Users/TheBa/OneDrive/Documents/GitHub/DoorChoicesGame/DoorsGame
-C:/Users/TheBa/OneDrive/Documents/GitHub/DoorChoicesGame/DoorsGame
+55510
+Successfully changed project path to: C:/Github projects/DoorChoicesGame/DoorsGame
+C:/Github projects/DoorChoicesGame/DoorsGame
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,65 +49,65 @@ C:/Users/TheBa/OneDrive/Documents/GitHub/DoorChoicesGame/DoorsGame
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8376] Host "[IP] 192.168.254.110 [Port] 0 [Flags] 2 [Guid] 1315649821 [EditorId] 1315649821 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-M6SDNGCQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22744] Host "[IP] 192.168.1.109 [Port] 0 [Flags] 2 [Guid] 928156226 [EditorId] 928156226 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-03CQOJJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8376] Host "[IP] 192.168.254.110 [Port] 0 [Flags] 2 [Guid] 1315649821 [EditorId] 1315649821 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-M6SDNGCQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22744] Host "[IP] 192.168.1.109 [Port] 0 [Flags] 2 [Guid] 928156226 [EditorId] 928156226 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-03CQOJJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 11.08 ms, found 3 plugins.
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 4.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.9f1 (ea401c316338)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.9f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/TheBa/OneDrive/Documents/GitHub/DoorChoicesGame/DoorsGame/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Github projects/DoorChoicesGame/DoorsGame/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
+    Renderer: NVIDIA GeForce RTX 4050 Laptop GPU (ID=0x28a1)
     Vendor:   NVIDIA
-    VRAM:     3935 MB
-    Driver:   32.0.15.6603
+    VRAM:     5935 MB
+    Driver:   31.0.15.3652
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity 2022.3.9f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity 2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity 2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56392
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity 2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006325 seconds.
-- Loaded All Assemblies, in  0.473 seconds
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003647 seconds.
+- Loaded All Assemblies, in  0.276 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.325 seconds
-Domain Reload Profiling: 797ms
-	BeginReloadAssembly (154ms)
+- Finished resetting the current domain, in  0.214 seconds
+Domain Reload Profiling: 490ms
+	BeginReloadAssembly (87ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (66ms)
-	LoadAllAssembliesAndSetupDomain (192ms)
-		LoadAssemblies (152ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (110ms)
+		LoadAssemblies (86ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (189ms)
-			TypeCache.Refresh (187ms)
-				TypeCache.ScanAssembly (169ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (326ms)
+		AnalyzeDomain (108ms)
+			TypeCache.Refresh (107ms)
+				TypeCache.ScanAssembly (97ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (215ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (252ms)
+		SetupLoadedEditorAssemblies (166ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (10ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (167ms)
-			ProcessInitializeOnLoadMethodAttributes (61ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (112ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,54 +115,117 @@ Domain Reload Profiling: 797ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.844 seconds
-Refreshing native plugins compatible for Editor in 4.79 ms, found 3 plugins.
+Symbol file data-000001D765CE1010 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D7874237A0 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765D8D010 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D7874237A0 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765D22620 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D7654D63F0 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765D22620 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765D29030 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765DD6430 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.AI.Navigation.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D764FB22D0 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765167370 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765518410 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765518410 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D764FCAAE0 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765DD6430 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765167370 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D764FE3AF0 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765CCB4B0 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D764FE3AF0 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D764FE3AF0 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D7874D1C60 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D76501C500 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D7655AD020 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D7874E9A70 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D787BDFE30 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D7874E9A70 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D76501C500 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D76501C500 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765613660 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D787EC4020 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001D765613660 doesn't match image C:\Github projects\DoorChoicesGame\DoorsGame\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.543 seconds
+Refreshing native plugins compatible for Editor in 3.19 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.748 seconds
-Domain Reload Profiling: 1589ms
-	BeginReloadAssembly (192ms)
+- Finished resetting the current domain, in  0.481 seconds
+Domain Reload Profiling: 1024ms
+	BeginReloadAssembly (114ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (548ms)
-		LoadAssemblies (419ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (361ms)
+		LoadAssemblies (240ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (244ms)
-			TypeCache.Refresh (215ms)
-				TypeCache.ScanAssembly (196ms)
-			ScanForSourceGeneratedMonoScriptInfo (19ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (748ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (152ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (482ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (536ms)
+		SetupLoadedEditorAssemblies (358ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (75ms)
-			ProcessInitializeOnLoadAttributes (412ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (8ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (283ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 5.68 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 3.26 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3165 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (56.9 KB). Loaded Objects now: 3629.
-Memory consumption went from 121.5 MB to 121.4 MB.
-Total: 4.103200 ms (FindLiveObjects: 0.348200 ms CreateObjectMapping: 0.305200 ms MarkObjects: 3.313200 ms  DeleteObjects: 0.135300 ms)
+Unloading 33 unused Assets / (57.4 KB). Loaded Objects now: 3629.
+Memory consumption went from 121.8 MB to 121.7 MB.
+Total: 4.078100 ms (FindLiveObjects: 0.261800 ms CreateObjectMapping: 0.165200 ms MarkObjects: 3.507400 ms  DeleteObjects: 0.141700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
@@ -176,58 +239,42 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 89649.049716 seconds.
-  path: Assets/Prefabs/Player/8a6387dc.png
-  artifactKey: Guid(474f4d1ee2f39734d993aa21da5c6fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/8a6387dc.png using Guid(474f4d1ee2f39734d993aa21da5c6fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8aea446f76adba6f312ec1b7b4471b') in 0.102125 seconds
+  Time since last request: 95638.096397 seconds.
+  path: Assets/Audio/key-get-39925.mp3
+  artifactKey: Guid(748fd9c3e28ed37419cbb1011094dc12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/key-get-39925.mp3 using Guid(748fd9c3e28ed37419cbb1011094dc12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d9e87c1533d6e4fad369af0a7466aa4') in 0.099709 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Prefabs/Player/c2c58de6.png
-  artifactKey: Guid(86bc43af2e6878245bd47740db36ca95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/c2c58de6.png using Guid(86bc43af2e6878245bd47740db36ca95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c390049bd489a222102d94834175525') in 0.019729 seconds
+  Time since last request: 0.000042 seconds.
+  path: Assets/Audio/opening-old-garage-door-80337-5.mp3
+  artifactKey: Guid(c0da89ea03824e140a43850f5e547dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/opening-old-garage-door-80337-5.mp3 using Guid(c0da89ea03824e140a43850f5e547dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ccde49f42305b6007689c80d8498649') in 0.015183 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Prefabs/Player/e26b89ab.dds
-  artifactKey: Guid(fcf6b0e3561974546aa9dcd7acb87146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/e26b89ab.dds using Guid(fcf6b0e3561974546aa9dcd7acb87146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee71ce3c5385f18a32ae25863eb0a766') in 0.016406 seconds
+  Time since last request: 0.000017 seconds.
+  path: Assets/Audio
+  artifactKey: Guid(2989c04bb5563154abd6946abbf90f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio using Guid(2989c04bb5563154abd6946abbf90f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea6402dd496c848cef9eba1da25adceb') in 0.000435 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Prefabs/Player/e26b89ab.png
-  artifactKey: Guid(3b9d0576a9e18c04aa07b8d7522a7f3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/e26b89ab.png using Guid(3b9d0576a9e18c04aa07b8d7522a7f3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ea656322a5ce65d954806a8aa0a879b') in 0.020573 seconds
+  Time since last request: 0.000040 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(c349bffb08ad15a499364475bfcb7275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(c349bffb08ad15a499364475bfcb7275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dc188c6bfe82db603302fed03ad7221') in 0.000371 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
   Time since last request: 0.000058 seconds.
-  path: Assets/Prefabs/Player/e5071e56.png
-  artifactKey: Guid(30ce5e4b7c1cd5648b55796ba64d0421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/e5071e56.png using Guid(30ce5e4b7c1cd5648b55796ba64d0421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab881ab131790ec8c3480895f625b2b') in 0.021543 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Prefabs/Player/e5071e56.dds
-  artifactKey: Guid(b05b8f22827de524bb7044d316717d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/e5071e56.dds using Guid(b05b8f22827de524bb7044d316717d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd16464e9a64b4290fa72114463726443') in 0.014760 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Prefabs/Player/9fef0843.dds
-  artifactKey: Guid(a9f5f24912cd2cb4297df5c5eecfacc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/9fef0843.dds using Guid(a9f5f24912cd2cb4297df5c5eecfacc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd038d7aa12ad1a81e49aa5a2a0b79b7') in 0.014507 seconds
+  path: Assets/Audio/Cold Ambient Horror Sound ( Industrial ).mp3
+  artifactKey: Guid(a7dd8e623b5925243aac79f6de5d72be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/Cold Ambient Horror Sound ( Industrial ).mp3 using Guid(a7dd8e623b5925243aac79f6de5d72be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6041c1eee2d3b513787bc2e91b261cd6') in 0.015643 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout

@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 646054618da9bc1468c722b5bbbc26ef, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: df3a0264ec9482f43898d41ccad24eed, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -656,7 +656,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 841081279}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -789,7 +789,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 862991454}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -1269,6 +1269,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaba2a53380a22a46ad6f299f380467a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicSource: {fileID: 0}
+  backgroundMusic: {fileID: 0}
+  musicVolume: 0.5
+  sfxSource: {fileID: 0}
+  loadGameSFX: {fileID: 0}
+  quitGameSFX: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
